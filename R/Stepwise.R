@@ -40,7 +40,7 @@ Stepwise=function(object,Save=NULL, scope=NULL, scale = 0,
                   trace = 1, keep = NULL, steps = 1000, k = 2){
 
   if(is.null(Save)){Nome="om.txt"}
-  if(is.null(Save)==FALSE){Nome="Save"}
+  if(is.null(Save)==FALSE){Nome=Save}
 sink(Nome)
   m=(step(object$model, scope=NULL, scale = 0,
          direction = c("both", "backward", "forward"),

@@ -49,7 +49,7 @@ FitModel=function(X,Y,Rep=NULL,Model,Design=1){
     sig= 1- pf(q =Anova1[1,3]/Anova1[2,3],df1 = Anova1[1,1],df2=Anova1[2,1])
     Anova1[1,5]=sig
 
-    Result=list(ANOVAglobal=Anova1,ANOVA=Anova2,Summary=Resumo,model=m)
+    Result=list(ANOVAglobal=Anova1,ANOVA=Anova2,Summary=Resumo,model=m,AIC=AIC(m),BIC=BIC(m))
 
   }
 
